@@ -16,7 +16,8 @@ remotion_demo/review/fix*.png
 # 每次渲染自动生成的检查图片与临时报告；保留 review 根目录下人工审核记录和脚本。
 remotion_demo/review/*/contact-sheet.jpg
 remotion_demo/review/*/render-technical-check.json
-remotion_demo/review/*/content-review.md
+remotion_demo/review/*/*.png
+# 内容审核记录需要随代码保存，便于复核与换电脑后复用；只忽略临时联系表和技术检查结果。
 
 # Python transient files
 **/__pycache__/

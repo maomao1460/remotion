@@ -11,10 +11,22 @@ import {FinanceEducationSample} from './education-sample/FinanceEducationSample'
 import {ActivityRecommendationSample} from './activity-sample/ActivityRecommendationSample';
 import {StyleSwitcherPreview, StyleSwitcherPreviewSchema} from './style-system/StyleSwitcherPreview';
 import {styleSwitcherDefaultProps} from './style-system/default-props';
+import {FinanceHotspotsBrief, NewsBriefSchema} from './news-brief/FinanceHotspotsBrief';
+import {newsBriefDefaultProps} from './news-brief/default-props';
 
 export const RemotionRoot = () => {
   return (
     <>
+      <Composition
+        id="FinanceHotspotsBrief"
+        component={FinanceHotspotsBrief}
+        durationInFrames={1800}
+        fps={30}
+        width={1920}
+        height={1080}
+        schema={NewsBriefSchema}
+        defaultProps={newsBriefDefaultProps}
+      />
       <Composition
         id="StyleSwitcherPreview"
         component={StyleSwitcherPreview}

@@ -16,6 +16,10 @@
     "validate:style-inputs": "node scripts/validate-style-inputs.mjs",
     "review:style": "node scripts/write-content-review.mjs",
     "render:style": "node scripts/render-style-input.mjs",
+    "validate:brief-inputs": "node scripts/validate-news-briefs.mjs",
+    "review:brief": "node scripts/write-news-brief-review.mjs",
+    "voice:brief": "C:\\Users\\Administrator\\.workbuddy\\binaries\\python\\envs\\tts\\Scripts\\python.exe scripts/gen-brief-voice.py",
+    "render:brief": "node scripts/render-news-brief.mjs",
     "manifest:audio-assets": "node scripts/refresh-audio-manifest.mjs",
     "verify:audio-assets": "node scripts/verify-audio-assets.mjs",
     "backup:audio-assets": "node scripts/backup-audio-assets.mjs",
@@ -23,6 +27,7 @@
     "validate:episodes:assets": "node scripts/validate-episodes.mjs --assets"
   },
   "dependencies": {
+    "@remotion/captions": "^4.0.521",
     "@remotion/cli": "4.0.521",
     "@remotion/fonts": "4.0.521",
     "@remotion/transitions": "4.0.521",

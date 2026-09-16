@@ -30,7 +30,7 @@ if (!video) errors.push('成片缺少视频轨道。');
 if (video && (video.width !== input.render.width || video.height !== input.render.height)) errors.push(`尺寸不匹配：实际 ${video.width}×${video.height}。`);
 if (video && video.r_frame_rate !== expectedFps) errors.push(`帧率不匹配：实际 ${video.r_frame_rate}。`);
 if (!Number.isFinite(duration) || Math.abs(duration - input.render.expectedDurationSeconds) > 0.15) errors.push(`时长不匹配：实际 ${duration.toFixed(3)} 秒，预期 ${input.render.expectedDurationSeconds} 秒。`);
-if ((input.media?.backgroundMusic || input.media?.voiceover) && !audio) errors.push('已配置音频素材，但成片没有音轨。');
+if ((input.media?.backgroundMusic || input.media?.voiceover || input.media?.voiceovers?.length) && !audio) errors.push('已配置音频素材，但成片没有音轨。');
 if (errors.length > 0) {
   console.error('✗ 成片技术检查失败');
   for (const error of errors) console.error(`  - ${error}`);
@@ -40,8 +40,9 @@ if (errors.length > 0) {
 const reviewDirectory = path.resolve(process.cwd(), 'review', path.basename(outputPath, path.extname(outputPath)));
 fs.mkdirSync(reviewDirectory, {recursive: true});
 const contactSheet = path.join(reviewDirectory, 'contact-sheet.jpg');
-const framesPerSecond = 4 / input.render.expectedDurationSeconds;
-const sheet = spawnSync('ffmpeg', ['-y', '-v', 'error', '-i', outputPath, '-vf', `fps=${framesPerSecond},scale=480:-1,tile=4x1`, '-frames:v', '1', contactSheet], {encoding: 'utf8'});
+const panelCount = input.render.expectedDurationSeconds >= 45 ? 6 : 4;
+const framesPerSecond = panelCount / input.render.expectedDurationSeconds;
+const sheet = spawnSync('ffmpeg', ['-y', '-v', 'error', '-i', outputPath, '-vf', `fps=${framesPerSecond},scale=480:-1,tile=${panelCount}x1`, '-frames:v', '1', contactSheet], {encoding: 'utf8'});
 if (sheet.status !== 0 || !fs.existsSync(contactSheet)) {
   console.error(`✗ 成片技术检查通过，但关键画面检查板生成失败：${sheet.stderr || sheet.error?.message || 'ffmpeg 失败'}`);
   process.exit(1);

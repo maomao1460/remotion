@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-09-16T01:43:29.139Z",
+  "generatedAt": "2026-09-16T03:13:20.010Z",
   "purpose": "本机配音和背景音乐的名称、大小与内容指纹。音频本体不进入 Git，迁移或恢复前须用此清单核对。",
   "assets": [
     {
@@ -74,6 +74,42 @@
       "bytes": 160416,
       "sha256": "f4770b0168d36df388796aaa3400af5107115f08ba1d7958d115a705057a0b6a",
       "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0915_close.mp3",
+      "bytes": 41040,
+      "sha256": "9ac4d983007d3ce2cb3aa12ee4d4a0bea3627aabee40e2469be2e4d2b1af47dc",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/0915_global.mp3",
+      "bytes": 59760,
+      "sha256": "546b1416e52c9596b9dd04ec6eee06402fe722f9ecd32b6c35c4a2b63888ed3a",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/0915_intro.mp3",
+      "bytes": 24768,
+      "sha256": "57ce73e77dacdc0b51e0466f99658dec99aa4b789378120b5927c8e17b5dca65",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/0915_liquidity.mp3",
+      "bytes": 62208,
+      "sha256": "68b327baf2f12e231fe8c948818495ed0e402b7847c9f52823c3fa923b0b8307",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/0915_macro.mp3",
+      "bytes": 89568,
+      "sha256": "3f31f9b28203c2af76fc702975b60317e404e54b3031924fd0262e2b91555324",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/0915_payment.mp3",
+      "bytes": 54000,
+      "sha256": "b341fe5c16d7ba2adcfad609dd6a60fe3e233052785ded2ae06da5b6e972e75b",
+      "role": "早期竖版或单段演示作品"
     },
     {
       "path": "public/bgm.wav",

@@ -1,0 +1,51 @@
+import type {NewsBriefProps} from './brief-types';
+
+export const newsBriefDefaultProps: NewsBriefProps = {
+  contentType: 'news',
+  styleId: 'data-pulse',
+  eyebrow: '财经热点 · 2026.09.15',
+  title: '9 月 15 日\n四个财经变量',
+  subtitle: '用 60 秒看增长动能、资金环境、海外利率与企业现金流。',
+  topics: [
+    {id: 'macro', eyebrow: '经济数据', title: '增长亮点与压力并存', summary: '工业、高技术制造和出口较强，投资与地产仍需观察。', metric: {label: '高技术制造业', value: '16.7', unit: '%'}, chart: [{label: '工业', value: 5.2, display: '+5.2%'}, {label: '高技制造', value: 16.7, display: '+16.7%'}, {label: '出口', value: 18.6, display: '+18.6%'}], positive: {label: '偏积极', text: '新动能与外贸支撑增长。'}, caution: {label: '偏谨慎', text: '投资与地产数据仍有压力。'}, neutral: {label: '中性', text: '供给较强，需求修复待观察。'}},
+    {id: 'liquidity', eyebrow: '金融数据', title: '流动性保持充裕', summary: '社融和货币供应合理增长，逆回购稳定资金环境。', metric: {label: 'M2 同比', value: '7.5', unit: '%'}, chart: [{label: '社融', value: 7.2, display: '+7.2%'}, {label: 'M2', value: 7.5, display: '+7.5%'}, {label: '逆回购', value: 50, display: '5000亿'}], positive: {label: '偏积极', text: '资金环境保持支持。'}, caution: {label: '偏谨慎', text: '总量不等于资产普涨。'}, neutral: {label: '中性', text: '继续看信用投向与利率。'}},
+    {id: 'global-rate', eyebrow: '海外利率', title: '外部风险仍在定价', summary: '期货市场在议息前给出较高的加息概率。', metric: {label: '加息 25bp 概率', value: '92.4', unit: '%'}, chart: [{label: '加息', value: 92.4, display: '92.4%'}, {label: '不变', value: 7.6, display: '7.6%'}], positive: {label: '偏积极', text: '预期已被市场提前定价。'}, caution: {label: '偏谨慎', text: '高利率预期会压估值。'}, neutral: {label: '中性', text: '概率不是既成事实。'}},
+    {id: 'sme-payment', eyebrow: '企业回款', title: '政策改善现金流预期', summary: '回款治理与融资支持同步推进，重点看落实。', metric: {label: '最长付款期限', value: '60', unit: '日'}, chart: [{label: '措施', value: 10, display: '10项'}, {label: '期限', value: 60, display: '60日'}], positive: {label: '偏积极', text: '有助改善链条现金流。'}, caution: {label: '偏谨慎', text: '效果取决于执行监督。'}, neutral: {label: '中性', text: '关注企业回款与融资数据。'}},
+  ],
+  captions: [
+    {text: '9 月 15 日，四个财经变量，60 秒快速看懂。', startMs: 0, endMs: 5000, timestampMs: null, confidence: null, pageBreakAfter: true},
+    {text: '工业和高技术制造保持较快增长，出口也在提速。', startMs: 5000, endMs: 12000, timestampMs: null, confidence: null},
+    {text: '但投资与房地产仍偏弱，内需修复值得继续观察。', startMs: 12000, endMs: 20000, timestampMs: null, confidence: null, pageBreakAfter: true},
+    {text: '社融与 M2 合理增长，五千亿元逆回购稳定资金环境。', startMs: 20000, endMs: 31000, timestampMs: null, confidence: null, pageBreakAfter: true},
+    {text: '美联储议息前，加息预期处于高位，外部利率风险仍在定价。', startMs: 31000, endMs: 43000, timestampMs: null, confidence: null, pageBreakAfter: true},
+    {text: '企业回款治理推出十项措施，重点观察现金流改善能否落地。', startMs: 43000, endMs: 53000, timestampMs: null, confidence: null, pageBreakAfter: true},
+    {text: '关注新动能、资金传导与外部利率。公开信息整理，不构成投资建议。', startMs: 53000, endMs: 60000, timestampMs: null, confidence: null},
+  ],
+  review: {verification: 'cross-checked', approvalStatus: 'approved', sources: [
+    {id: 'nbs', outlet: '国家统计局', url: 'https://www.stats.gov.cn/sj/zxfb/202609/t20260915_1965307.html'},
+    {id: 'yicai-macro', outlet: '第一财经', url: 'https://www.yicai.com/brief/103364516.html'},
+    {id: 'pbc-xinhua', outlet: '新华网', url: 'https://www3.xinhuanet.com/fortune/20260914/06447ad39fda407a8da93deb2a607b64/c.html'},
+    {id: 'cnfin', outlet: '新华财经', url: 'https://m.cnfin.com/yw-lb/zixun/20260914/4469640_1.html'},
+    {id: 'cls', outlet: '财联社', url: 'https://www.cls.cn/detail/2482901'},
+    {id: 'sina-fedwatch', outlet: '界面新闻转载', url: 'https://finance.sina.com.cn/jjxw/2026-09-15/doc-inirwfqh3657638.shtml'},
+    {id: 'gov-policy', outlet: '中国政府网政策转载', url: 'https://www.mee.gov.cn/zcwj/gwywj/202609/t20260910_1165789.shtml'},
+    {id: 'scio', outlet: '国新办报道', url: 'https://english.scio.gov.cn/pressroom/2026-09/15/content_118696616.html'},
+  ], numericClaims: [
+    {id: 'industrial', label: '工业增加值', displayedValue: '5.2%', sourceValues: [{sourceId: 'nbs', value: '5.2%'}, {sourceId: 'yicai-macro', value: '5.2%'}], adoptedSourceId: 'nbs', resolution: 'consistent', resolutionNote: '国家统计局原始发布与媒体速览一致，采用国家统计局口径。'},
+    {id: 'high-tech', label: '高技术制造业', displayedValue: '16.7%', sourceValues: [{sourceId: 'nbs', value: '16.7%'}, {sourceId: 'yicai-macro', value: '16.7%'}], adoptedSourceId: 'nbs', resolution: 'consistent', resolutionNote: '国家统计局原始发布与媒体速览一致，采用国家统计局口径。'},
+    {id: 'investment', label: '固定资产投资', displayedValue: '-7.2%', sourceValues: [{sourceId: 'nbs', value: '-7.2%'}, {sourceId: 'yicai-macro', value: '-7.2%'}], adoptedSourceId: 'nbs', resolution: 'consistent', resolutionNote: '国家统计局原始发布与媒体速览一致，采用国家统计局口径。'},
+    {id: 'm2', label: 'M2 同比', displayedValue: '7.5%', sourceValues: [{sourceId: 'pbc-xinhua', value: '7.5%'}, {sourceId: 'cnfin', value: '7.5%'}], adoptedSourceId: 'pbc-xinhua', resolution: 'consistent', resolutionNote: '人民银行发布内容经两个财经渠道一致转载，采用人民银行口径。'},
+    {id: 'fedwatch', label: '美联储加息 25bp 概率', displayedValue: '92.4%', sourceValues: [{sourceId: 'cls', value: '92.4%'}, {sourceId: 'sina-fedwatch', value: '92.4%'}], adoptedSourceId: 'cls', resolution: 'consistent', resolutionNote: '两处报道均引用 CME FedWatch 同一时点，采用 9 月 15 日早间市场隐含概率。'},
+    {id: 'payment-days', label: '中小企业最长付款期限', displayedValue: '60日', sourceValues: [{sourceId: 'gov-policy', value: '60日内'}, {sourceId: 'scio', value: '60日内'}], adoptedSourceId: 'gov-policy', resolution: 'consistent', resolutionNote: '政策原文与发布会报道一致，采用政策原文表述。'},
+  ]},
+  media: {backgroundMusic: {file: 'bgm.wav', volume: 0.045}, voiceovers: [
+    {file: '0915_intro.mp3', text: '9月15日，四个财经变量，六十秒快速看懂。', fromSeconds: 0, durationSeconds: 5},
+    {file: '0915_macro.mp3', text: '第一，八月经济数据发布。工业增加值同比增长百分之五点二，高技术制造业增长百分之十六点七，出口增长百分之十八点六。积极信号是新动能和外贸较强；但固定资产投资下降百分之七点二，房地产开发投资下降百分之十九点九，内需修复仍需观察。', fromSeconds: 5, durationSeconds: 15},
+    {file: '0915_liquidity.mp3', text: '第二，资金环境保持支持。八月末社融存量四百六十四点八万亿元，M2同比增长百分之七点五。当天还有五千亿元买断式逆回购安排。资金充裕不等于所有资产上涨，后续还要看信用投向和市场利率。', fromSeconds: 20, durationSeconds: 11},
+    {file: '0915_global.mp3', text: '第三，海外利率仍是风险变量。美联储议息前，期货市场隐含的加息二十五个基点概率为百分之九十二点四。高利率预期可能压制风险资产估值，但这只是市场预期，不是已经发生的决定。', fromSeconds: 31, durationSeconds: 12},
+    {file: '0915_payment.mp3', text: '第四，企业回款治理推出十项措施，引导大型企业对中小企业最长付款期限控制在六十日内。积极意义在于改善产业链现金流预期；实际效果仍取决于执行和监督。', fromSeconds: 43, durationSeconds: 10},
+    {file: '0915_close.mp3', text: '后续关注新动能、资金传导与外部利率。以上为公开信息整理，不构成投资建议。', fromSeconds: 53, durationSeconds: 7},
+  ]},
+  disclaimer: '公开信息整理，不构成任何投资建议；数据与市场预期均可能变化。',
+  render: {width: 1920, height: 1080, fps: 30, expectedDurationSeconds: 60},
+};
