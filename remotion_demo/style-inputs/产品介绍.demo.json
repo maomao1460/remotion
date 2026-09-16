@@ -1,0 +1,18 @@
+{
+  "contentType": "product",
+  "styleId": "product-trust",
+  "allowManualStyleOverride": false,
+  "eyebrow": "资金规划服务 · 演示输入",
+  "title": "把资金安排得\n更从容一些",
+  "subtitle": "从实际需求出发，先了解，再选择适合自己的服务方式。",
+  "cards": [
+    {"label": "先了解需求", "text": "从资金安排与使用计划出发。"},
+    {"label": "再清晰选择", "text": "用易懂信息比较服务方案。"},
+    {"label": "持续可查看", "text": "重要信息与进度随时掌握。"}
+  ],
+  "cta": "了解服务详情",
+  "disclaimer": "演示内容 · 具体产品与服务以审核后的正式资料为准",
+  "review": {"verification": "user-provided", "approvalStatus": "approved", "userProvidedNote": "阶段 4B 产品演示材料", "sources": []},
+  "media": {"backgroundMusic": {"file": "bgm.wav", "volume": 0.05}},
+  "render": {"width": 1920, "height": 1080, "fps": 30, "expectedDurationSeconds": 8}
+}

@@ -1,0 +1,18 @@
+{
+  "contentType": "education",
+  "styleId": "finance-education",
+  "allowManualStyleOverride": false,
+  "eyebrow": "一图懂金融 · 演示输入",
+  "title": "先理解风险，\n再做选择",
+  "subtitle": "用一条连续坐标，理解风险与收益为何总是相伴出现。",
+  "cards": [
+    {"label": "看期限", "text": "这笔钱什么时候可能要用？"},
+    {"label": "看风险等级", "text": "波动发生时能否接受？"},
+    {"label": "留足备用金", "text": "日常所需不要全部投入。"}
+  ],
+  "cta": "了解后再选择",
+  "disclaimer": "演示内容 · 不构成投资建议，投资有风险",
+  "review": {"verification": "user-provided", "approvalStatus": "approved", "userProvidedNote": "阶段 4B 科普演示材料", "sources": []},
+  "media": {"backgroundMusic": {"file": "bgm.wav", "volume": 0.05}},
+  "render": {"width": 1920, "height": 1080, "fps": 30, "expectedDurationSeconds": 8}
+}

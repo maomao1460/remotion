@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-09-16T01:43:29.139Z",
+  "purpose": "本机配音和背景音乐的名称、大小与内容指纹。音频本体不进入 Git，迁移或恢复前须用此清单核对。",
+  "assets": [
+    {
+      "path": "public/0910_cover.mp3",
+      "bytes": 35568,
+      "sha256": "59b1000a5d7b7c262af68313aa8ad54cfaebcee59d712b3121beb4d720cc59d1",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0910_end.mp3",
+      "bytes": 56736,
+      "sha256": "dcf2d1809e1c165e65f90547cf1ef2704f00ff6c8df0acdda81f6765b7940e8a",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0910_news1.mp3",
+      "bytes": 216576,
+      "sha256": "4812e193826cbd50e1d8fe55ebdf1209908e031d1a89f1d2d52fbdb915d04c4d",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0910_news2.mp3",
+      "bytes": 202608,
+      "sha256": "ee7bc3bd43ec9b198d4956abf74dfe41df6de962d827802d254bd3d1bae604cb",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0910_news3.mp3",
+      "bytes": 191520,
+      "sha256": "89d87434e5b01927451250f5ae285611ecff6cde4bd19064706ef4024faad57f",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0910_news4.mp3",
+      "bytes": 165312,
+      "sha256": "b1a2db242f35f8fefb9ebd27b94dfb878bbd24c73d3be1269338d73add1dbde7",
+      "role": "历史基线：FullVideo0910"
+    },
+    {
+      "path": "public/0913_cover.mp3",
+      "bytes": 36864,
+      "sha256": "2024968efcad2391a0c32f779224d855a582bf0c2d0a82137cb24b6e06849f66",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0913_end.mp3",
+      "bytes": 57024,
+      "sha256": "50ca17e9255503cbbe67b50ed760907a89d17036c83ee986222be9a14ac2e1d4",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0913_news1.mp3",
+      "bytes": 168480,
+      "sha256": "5a262ef1d5ac351c67fc3f59dc868c75bc8c89d08b12ded703b08b0878fea786",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0913_news2.mp3",
+      "bytes": 169776,
+      "sha256": "7cfffe24bd746662d850a3078531cd0f1882da3f686055b5a822bb93dace56c1",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0913_news3.mp3",
+      "bytes": 161136,
+      "sha256": "af8f20603c1346d7945ffce47ff362380722f09e06579129616cb6aa7153356d",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/0913_news4.mp3",
+      "bytes": 160416,
+      "sha256": "f4770b0168d36df388796aaa3400af5107115f08ba1d7958d115a705057a0b6a",
+      "role": "历史基线：FullVideo0913"
+    },
+    {
+      "path": "public/bgm.wav",
+      "bytes": 20398940,
+      "sha256": "b6be7060cb0880d762e1c9db3beadd5df37af68c88fd9d5b449f1ce833d51394",
+      "role": "背景音乐：四种风格样片与历史作品"
+    },
+    {
+      "path": "public/cover.mp3",
+      "bytes": 39888,
+      "sha256": "3d150741f5f136a1dfa0c9b11c3b3be9b095b64e628b2ea6b11e95fd18e6c4d2",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/end.mp3",
+      "bytes": 52416,
+      "sha256": "590e5f9f33cb04bec0408371bc822953588a4a6577913c6d7536900b87b083df",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/full_voice.mp3",
+      "bytes": 256320,
+      "sha256": "078901a1df535f253ed5925da3b92e6dd71aef328a4220b8f2b501264bf96e12",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/news1.mp3",
+      "bytes": 235872,
+      "sha256": "02e5dc700218d1f99f95a94cd7d23dfaaae46f02cee5247439c6317b1f63b5f0",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/news2.mp3",
+      "bytes": 201024,
+      "sha256": "6bd71a630d66d2492a3a91f782c11bc994d7ecaa3b5d7a84b7eecd9bcde1ffbc",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/news3.mp3",
+      "bytes": 184752,
+      "sha256": "2f6921b4bb5f70a3e270cda9bc67d0b04bb7ae2da7d933a16bcee83918d722f6",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/news4.mp3",
+      "bytes": 185760,
+      "sha256": "94334718b0dad7ef96fe0fea60fa396b508415a6270cd511cf38d76c22c94f9b",
+      "role": "早期竖版或单段演示作品"
+    },
+    {
+      "path": "public/seg_02.mp3",
+      "bytes": 164592,
+      "sha256": "5ff2638e3a4fb19b01d682b05a97d8ba1d432745347f6d217900842a911a5e1e",
+      "role": "早期竖版或单段演示作品"
+    }
+  ]
+}

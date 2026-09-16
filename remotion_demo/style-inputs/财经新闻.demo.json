@@ -1,0 +1,20 @@
+{
+  "contentType": "news",
+  "styleId": "data-pulse",
+  "allowManualStyleOverride": false,
+  "eyebrow": "本周核心新闻 · 演示输入",
+  "title": "一个数字\n看懂本周变化",
+  "subtitle": "先用关键数据建立判断，再说明可能带来的市场影响。",
+  "heroValue": "3900",
+  "heroUnit": "点",
+  "cards": [
+    {"label": "发生什么", "text": "先说明变化本身。"},
+    {"label": "为什么", "text": "补充数据和背景。"},
+    {"label": "看什么", "text": "提示后续观察重点。"}
+  ],
+  "cta": "关注后续影响",
+  "disclaimer": "演示内容 · 历史数据不代表当前事实或投资建议",
+  "review": {"verification": "user-provided", "approvalStatus": "approved", "userProvidedNote": "阶段 4B 新闻演示材料", "sources": []},
+  "media": {"backgroundMusic": {"file": "bgm.wav", "volume": 0.05}},
+  "render": {"width": 1920, "height": 1080, "fps": 30, "expectedDurationSeconds": 8}
+}

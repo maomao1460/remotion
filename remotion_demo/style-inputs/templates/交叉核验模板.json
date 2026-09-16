@@ -1,0 +1,38 @@
+{
+  "contentType": "news",
+  "styleId": "data-pulse",
+  "allowManualStyleOverride": false,
+  "eyebrow": "本期主题 · 待审核",
+  "title": "用一个数字\n说明本期变化",
+  "subtitle": "先说明发生什么，再解释数据口径和后续关注点。",
+  "heroValue": "3,900",
+  "heroUnit": "点",
+  "cards": [
+    {"label": "发生什么", "text": "填写已核验的变化。"},
+    {"label": "为什么", "text": "说明数字所对应的统计口径。"}
+  ],
+  "disclaimer": "待审核内容 · 不构成投资建议",
+  "review": {
+    "verification": "cross-checked",
+    "approvalStatus": "draft",
+    "sources": [
+      {"id": "official", "outlet": "官方发布机构", "url": "https://www.example.com/"},
+      {"id": "secondary", "outlet": "第二独立来源", "url": "https://www.example.com/"}
+    ],
+    "numericClaims": [
+      {
+        "id": "headline-index",
+        "label": "画面主数字",
+        "displayedValue": "3,900",
+        "sourceValues": [
+          {"sourceId": "official", "value": "3,900"},
+          {"sourceId": "secondary", "value": "3,900"}
+        ],
+        "adoptedSourceId": "official",
+        "resolution": "consistent",
+        "resolutionNote": "两处来源的收盘点位一致，采用官方发布口径。"
+      }
+    ]
+  },
+  "render": {"width": 1920, "height": 1080, "fps": 30, "expectedDurationSeconds": 8}
+}

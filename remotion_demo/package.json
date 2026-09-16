@@ -1,0 +1,40 @@
+{
+  "name": "remotion-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "render": "remotion render",
+    "browser:ensure": "remotion browser ensure",
+    "compositions": "remotion compositions src/index.tsx",
+    "typecheck": "tsc --noEmit",
+    "verify": "npm run typecheck && npm run compositions",
+    "render:0913": "remotion render src/index.tsx FullVideo0913 out/fullvideo_0913.mp4 --concurrency=4",
+    "render:style-sample": "remotion render src/index.tsx FinanceDataStyleSample out/finance_data_style_sample.mp4 --concurrency=4",
+    "render:product-sample": "remotion render src/index.tsx ProductTrustSample out/product_trust_sample.mp4 --concurrency=4",
+    "render:education-sample": "remotion render src/index.tsx FinanceEducationSample out/finance_education_sample.mp4 --concurrency=4",
+    "render:activity-sample": "remotion render src/index.tsx ActivityRecommendationSample out/activity_recommendation_sample.mp4 --concurrency=4",
+    "validate:style-inputs": "node scripts/validate-style-inputs.mjs",
+    "review:style": "node scripts/write-content-review.mjs",
+    "render:style": "node scripts/render-style-input.mjs",
+    "manifest:audio-assets": "node scripts/refresh-audio-manifest.mjs",
+    "verify:audio-assets": "node scripts/verify-audio-assets.mjs",
+    "backup:audio-assets": "node scripts/backup-audio-assets.mjs",
+    "validate:episodes": "node scripts/validate-episodes.mjs",
+    "validate:episodes:assets": "node scripts/validate-episodes.mjs --assets"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.521",
+    "@remotion/fonts": "4.0.521",
+    "@remotion/transitions": "4.0.521",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "recharts": "3.10.1",
+    "remotion": "4.0.521",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.7",
+    "@types/react-dom": "19.2.3",
+    "typescript": "5.9.3"
+  }
+}

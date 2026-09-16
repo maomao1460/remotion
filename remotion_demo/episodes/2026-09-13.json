@@ -1,0 +1,184 @@
+{
+  "schemaVersion": "1.0",
+  "id": "2026-09-13",
+  "status": "legacy-migrated",
+  "format": {
+    "compositionId": "FullVideo0913",
+    "width": 1920,
+    "height": 1080,
+    "fps": 30,
+    "transitionSeconds": 0.4,
+    "expectedDurationSeconds": 123.6
+  },
+  "template": {
+    "id": "finance-pro-v1",
+    "voiceProvider": "edge-tts / zh-CN-YunjianNeural / +15%",
+    "backgroundMusic": "bgm.wav"
+  },
+  "cover": {
+    "eyebrow": "财经梳理 · 2026.09.13",
+    "title": "9月13日 财经梳理",
+    "subtitle": "四个关键信号 · 看懂本周",
+    "voice": {
+      "file": "0913_cover.mp3",
+      "durationSeconds": 6.144,
+      "narration": "这里是九月十三号的财经梳理。三分钟，看懂这周的四个关键信号。"
+    }
+  },
+  "sections": [
+    {
+      "id": "news-1",
+      "tag": "要闻一 · 大盘调整",
+      "title": "A股失守3900\n通信算力逆势吸金",
+      "metric": {"value": "3888", "unit": "点"},
+      "chart": {
+        "kind": "index-bars",
+        "unit": "%",
+        "series": [
+          {"label": "创业板", "value": 1.08},
+          {"label": "深证成指", "value": -0.34},
+          {"label": "上证指数", "value": -1.07}
+        ]
+      },
+      "opinions": [
+        {"source": "星图金融研究院", "tone": "neutral", "text": "核心矛盾不在内部，而在海外利率定价"},
+        {"source": "资金流向", "tone": "bullish", "text": "通信、算力硬件逆势吸金，主力站队明显"},
+        {"source": "盘面观察", "tone": "bearish", "text": "流动性不缺，缺增量资金承接意愿"}
+      ],
+      "evidence": [
+        {
+          "claim": "上证指数周五收报3888.11点、全周下跌1.07%，创业板上涨1.08%。",
+          "adoptedValue": "3888.11点 / -1.07% / +1.08%",
+          "verification": "legacy-unverified",
+          "sourceIds": ["src-tencent-market", "src-netease-market"]
+        }
+      ],
+      "voice": {
+        "file": "0913_news1.mp3",
+        "durationSeconds": 28.08,
+        "narration": "第一，A股本周调整，上证失守三千九百点。沪指全周下跌百分之一点零七，周五收报三千八百八十八点一一。创业板逆势上涨百分之一点零八，通信、算力硬件成为资金避风港，两市主力净流出二百四十八亿元。市场怎么看？有机构认为，核心矛盾不在内部，而在海外利率定价。也有观点指出，流动性并不缺，缺的是增量资金的承接意愿。"
+      }
+    },
+    {
+      "id": "news-2",
+      "tag": "要闻二 · 加息升温",
+      "title": "美联储加息预期\n骤升至近九成",
+      "metric": {"value": "90", "unit": "%"},
+      "chart": {
+        "kind": "yield-bars",
+        "unit": "%",
+        "series": [
+          {"label": "10年期美债", "value": 4.42},
+          {"label": "阶段高点", "value": 4.96}
+        ]
+      },
+      "opinions": [
+        {"source": "高盛/摩根大通", "tone": "bearish", "text": "不希望按兵不动引发剧烈波动"},
+        {"source": "巴克莱", "tone": "neutral", "text": "政策方向明确后，终将带来回报"},
+        {"source": "利率传导", "tone": "bearish", "text": "美债利率飙升，压制风险资产估值"}
+      ],
+      "evidence": [
+        {
+          "claim": "市场对9月加息25个基点的预期升至近九成，10年期美债收益率升至4.96%。",
+          "adoptedValue": "近90% / 4.96%",
+          "verification": "legacy-unverified",
+          "sourceIds": ["src-tencent-fed", "src-toutiao-fed"]
+        }
+      ],
+      "voice": {
+        "file": "0913_news2.mp3",
+        "durationSeconds": 28.296,
+        "narration": "第二，美联储加息预期骤然升温。美国八月核心CPI超出预期，市场对九月加息二十五个基点的押注升至近九成。高盛、摩根大通集体转鹰，十年期美债收益率升至百分之四点九六，创阶段新高。市场怎么看？高盛认为，委员会不希望按兵不动引发剧烈波动。巴克莱则指出，符合预期的数据也不会排除加息，但政策方向明确后终将回稳。"
+      }
+    },
+    {
+      "id": "news-3",
+      "tag": "要闻三 · 油价破百",
+      "title": "中东局势升级\n油价年内第三次破百",
+      "metric": {"value": "101", "unit": "美元"},
+      "chart": {
+        "kind": "oil-trend",
+        "unit": "美元/桶",
+        "series": [
+          {"label": "9/08", "value": 90},
+          {"label": "9/09", "value": 93},
+          {"label": "9/10", "value": 95},
+          {"label": "9/11", "value": 98},
+          {"label": "9/12", "value": 99},
+          {"label": "9/13", "value": 101}
+        ]
+      },
+      "opinions": [
+        {"source": "传导链", "tone": "bullish", "text": "地缘→油价→通胀→央行偏鹰清晰"},
+        {"source": "伊朗表态", "tone": "bearish", "text": "若美国结束封锁，海峡将重新开放"},
+        {"source": "航运数据", "tone": "neutral", "text": "VLCC运费飙至正常基准4.5倍"}
+      ],
+      "evidence": [
+        {
+          "claim": "布伦特原油本周上涨8.84%，重新站上100美元，为年内第三次破百。",
+          "adoptedValue": "+8.84% / 100美元以上",
+          "verification": "legacy-unverified",
+          "sourceIds": ["src-tencent-oil", "src-netease-oil", "src-toutiao-oil"]
+        }
+      ],
+      "voice": {
+        "file": "0913_news3.mp3",
+        "durationSeconds": 26.856,
+        "narration": "第三，中东局势再升级，油价年内第三次破百。本周布伦特原油上涨百分之八点八四，重新站上一百美元。霍尔木兹航运风险重燃，中东至中国VLCC运费飙升至正常基准的四点五倍。市场怎么看？地缘推油价、油价推通胀、通胀逼央行偏鹰的传导链条清晰。也有观点认为，伊朗表态若美国结束封锁，海峡将重新开放。"
+      }
+    },
+    {
+      "id": "news-4",
+      "tag": "要闻四 · 算力景气",
+      "title": "AI算力景气\n光模块预测再上调",
+      "metric": {"value": "1485", "unit": "亿美元"},
+      "chart": {
+        "kind": "optics-bars",
+        "unit": "亿美元",
+        "series": [
+          {"label": "2026", "value": 677},
+          {"label": "2027", "value": 1314},
+          {"label": "2028", "value": 1485}
+        ]
+      },
+      "opinions": [
+        {"source": "高盛", "tone": "bullish", "text": "上调光模块预测，2028达1485亿美元"},
+        {"source": "黄仁勋", "tone": "bullish", "text": "AGI已到来，算力需求持续升温"},
+        {"source": "FCC新规", "tone": "neutral", "text": "中国光通信未入限制名单，担忧缓解"}
+      ],
+      "evidence": [
+        {
+          "claim": "高盛将2028年全球光模块市场预测上调至1485亿美元，较此前上调115%。",
+          "adoptedValue": "1485亿美元 / +115%",
+          "verification": "legacy-unverified",
+          "sourceIds": ["src-tencent-optics", "src-netease-optics"]
+        }
+      ],
+      "voice": {
+        "file": "0913_news4.mp3",
+        "durationSeconds": 26.736,
+        "narration": "第四，AI算力景气延续，光模块再获上调。高盛将二零二八年全球光模块市场预测上调至一千四百八十五亿美元，较此前上调百分之一百一十五。FCC新规落地，中国光通信企业未被纳入限制名单，GPT-6 Astra发布，黄仁勋称AGI已经到来。市场怎么看？算力硬件方向经历回调后，估值回到低位，政策与产业共振。"
+      }
+    }
+  ],
+  "ending": {
+    "headline": "关注下周通胀数据与政策落地",
+    "disclaimer": "以上内容仅消息面检索，不构成任何投资建议。",
+    "voice": {
+      "file": "0913_end.mp3",
+      "durationSeconds": 9.504,
+      "narration": "关注下周通胀数据与政策落地。以上就是今天的财经梳理。以上内容仅消息面检索，不构成任何投资建议。"
+    }
+  },
+  "sources": [
+    {"id": "src-tencent-market", "outlet": "腾讯新闻", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：A股与通信算力条目"},
+    {"id": "src-netease-market", "outlet": "网易财经", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：A股周度表现条目"},
+    {"id": "src-tencent-fed", "outlet": "腾讯新闻", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：美联储预期条目"},
+    {"id": "src-toutiao-fed", "outlet": "今日头条", "tier": "context", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：美债收益率条目"},
+    {"id": "src-tencent-oil", "outlet": "腾讯新闻", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：油价与中东局势条目"},
+    {"id": "src-netease-oil", "outlet": "网易财经", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：布伦特原油条目"},
+    {"id": "src-toutiao-oil", "outlet": "今日头条", "tier": "context", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：霍尔木兹航运条目"},
+    {"id": "src-tencent-optics", "outlet": "腾讯新闻", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：光模块市场预测条目"},
+    {"id": "src-netease-optics", "outlet": "网易财经", "tier": "secondary", "retrievedAt": "2026-09-13", "url": null, "citation": "原数据核对表：光通信与政策条目"}
+  ]
+}

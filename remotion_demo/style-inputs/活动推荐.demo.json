@@ -1,0 +1,18 @@
+{
+  "contentType": "activity",
+  "styleId": "activity-calendar",
+  "allowManualStyleOverride": false,
+  "eyebrow": "周末金融生活季 · 演示输入",
+  "title": "这个周末，\n来一场轻松见面",
+  "subtitle": "把服务说明、互动体验与金融知识放进同一天。",
+  "cards": [
+    {"label": "轻松听懂", "text": "用简单方式聊聊金融话题。"},
+    {"label": "现场体验", "text": "把服务内容看得更明白。"},
+    {"label": "互动打卡", "text": "留下属于你的参与记录。"}
+  ],
+  "cta": "查看活动说明",
+  "disclaimer": "演示活动 · 日期、对象与参与方式以正式公告为准",
+  "review": {"verification": "user-provided", "approvalStatus": "approved", "userProvidedNote": "阶段 4B 活动演示材料", "sources": []},
+  "media": {"backgroundMusic": {"file": "bgm.wav", "volume": 0.05}},
+  "render": {"width": 1920, "height": 1080, "fps": 30, "expectedDurationSeconds": 8}
+}

@@ -1,0 +1,42 @@
+# Local agent state and system metadata
+.workbuddy/
+.DS_Store
+Thumbs.db
+
+# Node / Remotion runtime and generated exports
+remotion_demo/node_modules/
+remotion_demo/out/
+remotion_demo/chrome-headless-shell/
+remotion_demo/chrome-headless-shell.zip
+remotion_demo/.cache/
+remotion_demo/public/*.mp3
+remotion_demo/public/*.wav
+remotion_demo/review/chk*.png
+remotion_demo/review/fix*.png
+# 每次渲染自动生成的检查图片与临时报告；保留 review 根目录下人工审核记录和脚本。
+remotion_demo/review/*/contact-sheet.jpg
+remotion_demo/review/*/render-technical-check.json
+remotion_demo/review/*/content-review.md
+
+# Python transient files
+**/__pycache__/
+*.py[cod]
+
+# Browser profiles and generated artifacts from the legacy smoke test
+smoke_test_0906/edge_profile_2/
+smoke_test_0906/edge_profile*/
+smoke_test_0906/audio/
+smoke_test_0906/png/
+smoke_test_0906/prob_profile_x/
+smoke_test_0906/prob_y/
+smoke_test_0906/out/
+smoke_test_0906/slide_*.html
+smoke_test_0906/*.png
+smoke_test_0906/bgm.wav
+smoke_test_0906/durations.json
+smoke_test_0906/err.txt
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
