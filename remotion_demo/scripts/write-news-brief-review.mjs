@@ -17,7 +17,8 @@ try {
   const reportPath = path.join(reviewDirectory, 'content-review.md');
   const sourceRows = input.review.sources.map((source) => `| ${source.id} | ${source.outlet} | ${source.url} |`).join('\n');
   const claimRows = input.review.numericClaims.map((claim) => `| ${claim.label} | ${claim.displayedValue} | ${claim.sourceValues.map((value) => `${value.sourceId}: ${value.value}`).join('<br>')} | ${claim.adoptedSourceId} | ${claim.resolution}：${claim.resolutionNote} |`).join('\n');
-  const report = `# 财经快报审核记录\n\n- 输入文件：\`${path.relative(process.cwd(), inputPath)}\`\n- 热点数量：4\n- 审核状态：已批准\n- 核验方式：交叉核验\n\n## 来源清单\n\n| 编号 | 来源 | 链接 |\n| --- | --- | --- |\n${sourceRows}\n\n## 核心数字核验表\n\n| 数字名称 | 画面采用值 | 各来源记录值 | 最终采用来源 | 差异处理 |\n| --- | --- | --- | --- | --- |\n${claimRows}\n\n> 说明：程序检查来源、数值和采用口径是否自洽；对统计口径、事实含义和合规表述仍由内容审核负责。\n`;
+  const perspectiveRows = input.topics.flatMap((topic) => [topic.positive, topic.caution, topic.neutral].map((perspective) => `| ${topic.eyebrow} | ${perspective.label} | ${perspective.text} | ${perspective.attribution} | ${perspective.sourceType} | ${perspective.sourceId} |`)).join('\n');
+  const report = `# 财经快报审核记录\n\n- 输入文件：\`${path.relative(process.cwd(), inputPath)}\`\n- 热点数量：4\n- 审核状态：已批准\n- 核验方式：交叉核验\n\n## 来源清单\n\n| 编号 | 来源 | 链接 |\n| --- | --- | --- |\n${sourceRows}\n\n## 外部观点溯源表\n\n| 热点 | 观点标签 | 画面观点 | 来源人或机构 | 来源类型 | 来源编号 |\n| --- | --- | --- | --- | --- |\n${perspectiveRows}\n\n> “媒体评论”和“机构观点”均为公开报道中的外部看法；“政策方观点”仅代表政策参与方表述，不等同于独立第三方评论。\n\n## 核心数字核验表\n\n| 数字名称 | 画面采用值 | 各来源记录值 | 最终采用来源 | 差异处理 |\n| --- | --- | --- | --- | --- |\n${claimRows}\n\n> 说明：程序检查来源、数值和采用口径是否自洽；对统计口径、事实含义和合规表述仍由内容审核负责。\n`;
   fs.mkdirSync(reviewDirectory, {recursive: true});
   fs.writeFileSync(reportPath, report, 'utf8');
   console.log(`✓ 财经快报审核记录：${reportPath}`);

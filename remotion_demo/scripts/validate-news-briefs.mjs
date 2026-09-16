@@ -10,6 +10,7 @@ const forRender = args.includes('--for-render');
 const inputDirectory = path.resolve(process.cwd(), 'brief-inputs');
 const targets = fileIndex >= 0 ? [path.resolve(process.cwd(), args[fileIndex + 1] ?? '')] : fs.readdirSync(inputDirectory).filter((file) => file.endsWith('.json')).map((file) => path.join(inputDirectory, file));
 const normalize = (value) => value.replace(/[\s,，]/g, '').replace(/内$/u, '');
+const normalizeNarration = (value) => value.replace(/[\s,，。；;、！？!?]/g, '');
 
 const checkUrl = async (url) => {
   const controller = new AbortController();
@@ -42,6 +43,9 @@ for (const target of targets) {
     const errors = [];
     const sources = new Map(input.review.sources.map((item) => [item.id, item]));
     if (sources.size !== input.review.sources.length) errors.push('来源编号不能重复。');
+    for (const topic of input.topics) for (const perspective of [topic.positive, topic.caution, topic.neutral]) {
+      if (!sources.has(perspective.sourceId)) errors.push(`热点“${topic.eyebrow}”的“${perspective.label}”观点引用了未登记来源 ${perspective.sourceId}。`);
+    }
     for (const claim of input.review.numericClaims) {
       const sourceIds = [...new Set(claim.sourceValues.map((item) => item.sourceId))];
       if (sourceIds.length < 2) errors.push(`核心数字“${claim.label}”至少需要两个来源。`);
@@ -54,6 +58,18 @@ for (const target of targets) {
       const next = input.captions[index + 1];
       if (current.endMs <= current.startMs) errors.push(`字幕 ${index + 1} 的结束时间必须晚于开始时间。`);
       if (next && current.endMs > next.startMs) errors.push(`字幕 ${index + 1} 与 ${index + 2} 发生重叠。`);
+    }
+    const voiceovers = new Map(input.media.voiceovers.map((item) => [item.file, item]));
+    for (const caption of input.captions) if (!voiceovers.has(caption.voiceoverFile)) errors.push(`字幕“${caption.text}”关联了不存在的旁白 ${caption.voiceoverFile}。`);
+    for (const voiceover of input.media.voiceovers) {
+      const related = input.captions.filter((caption) => caption.voiceoverFile === voiceover.file);
+      if (related.length === 0) { errors.push(`旁白 ${voiceover.file} 没有对应字幕。`); continue; }
+      const spokenStart = voiceover.fromSeconds * 1000;
+      const spokenEnd = (voiceover.fromSeconds + voiceover.durationSeconds) * 1000;
+      if (related[0].startMs !== spokenStart) errors.push(`旁白 ${voiceover.file} 的首条字幕必须从 ${spokenStart}ms 开始。`);
+      if (related.at(-1).endMs !== spokenEnd) errors.push(`旁白 ${voiceover.file} 的末条字幕必须在 ${spokenEnd}ms 结束。`);
+      if (related.some((caption) => caption.startMs < spokenStart || caption.endMs > spokenEnd)) errors.push(`旁白 ${voiceover.file} 的字幕时间超出所属旁白范围。`);
+      if (normalizeNarration(related.map((caption) => caption.text).join('')) !== normalizeNarration(voiceover.text)) errors.push(`旁白 ${voiceover.file} 与对应字幕文字不一致。`);
     }
     if (input.captions.at(-1)?.endMs !== input.render.expectedDurationSeconds * 1000) errors.push('最后一条字幕必须覆盖到成片结束时间。');
     const audioFiles = [input.media.backgroundMusic.file, ...input.media.voiceovers.map((item) => item.file)];

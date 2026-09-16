@@ -19,6 +19,30 @@
 | sina-fedwatch | 界面新闻转载 | https://finance.sina.com.cn/jjxw/2026-09-15/doc-inirwfqh3657638.shtml |
 | gov-policy | 中国政府网政策转载 | https://www.mee.gov.cn/zcwj/gwywj/202609/t20260910_1165789.shtml |
 | scio | 工信部转载的国新办吹风会实录 | https://wap.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html |
+| bloomberg-miao | Bloomberg《The China Show》采访缪延亮 | https://finance.yahoo.com/video/ai-transforming-chinas-economy-043644709.html |
+| reuters-views | 路透报道引述 ING 与 Oxford Economics | https://www.channelnewsasia.com/business/tech-boom-powers-chinas-factories-economic-imbalances-deepen-consumption-slows-6384791 |
+| wangqing-mingming | 每日经济新闻引述王青与明明团队 | https://finance.eastmoney.com/a/202609153874577352.html |
+| mufg-hardman | FXStreet 引述 MUFG Lee Hardman | https://www.tmgm.com/zh-hans/analysis/market-news/article/japanese-yen-weakens-as-fed-rate-hike-looms-202609150041 |
+| standard-view | 财联社转述渣打银行研报 | https://finance.eastmoney.com/a/202609153874720433.html |
+
+## 外部观点溯源表
+
+| 热点 | 观点标签 | 画面观点 | 来源人或机构 | 来源类型 | 来源编号 |
+| --- | --- | --- | --- | --- |
+| 经济数据 | 偏积极 | 新增长引擎带动工业与出口。 | 缪延亮 · 中金公司（Bloomberg 访谈） | 机构观点 | bloomberg-miao |
+| 经济数据 | 偏谨慎 | 房地产拖累仍可能令增长偏弱。 | Sheana Yue · Oxford Economics（路透） | 机构观点 | reuters-views |
+| 经济数据 | 中性 | 8 月大体稳定，但不排除偏弱。 | Lynn Song · ING（路透） | 机构观点 | reuters-views |
+| 金融数据 | 偏积极 | 稳增长仍需流动性配合。 | 王青 · 东方金诚 | 机构观点 | wangqing-mingming |
+| 金融数据 | 偏谨慎 | 等量续作反映当前资金较宽松。 | 王青 · 东方金诚 | 机构观点 | wangqing-mingming |
+| 金融数据 | 中性 | 操作将随资金松紧灵活调整。 | 明明团队 · 中信证券 | 机构观点 | wangqing-mingming |
+| 海外利率 | 偏积极 | 紧缩预期已显著支撑美元。 | Lee Hardman · MUFG（FXStreet） | 机构观点 | mufg-hardman |
+| 海外利率 | 偏谨慎 | 渣打认为加息或是错误选择。 | 渣打银行研究部（财联社） | 机构观点 | standard-view |
+| 海外利率 | 中性 | 真正焦点仍是会后政策路径。 | 渣打银行研究部（财联社） | 机构观点 | standard-view |
+| 企业回款 | 偏积极 | 规则让中小企业更明确回款预期。 | 柯吉欣 · 工信部（国新办吹风会） | 政策方观点 | scio |
+| 企业回款 | 偏谨慎 | 拖欠会转嫁融资成本并扰乱传导。 | 曹媛媛 · 人民银行（国新办吹风会） | 政策方观点 | scio |
+| 企业回款 | 中性 | 规则、监管与融资支持并行。 | 国新办政策吹风会 | 政策方观点 | scio |
+
+> “媒体评论”和“机构观点”均为公开报道中的外部看法；“政策方观点”仅代表政策参与方表述，不等同于独立第三方评论。
 
 ## 核心数字核验表
 

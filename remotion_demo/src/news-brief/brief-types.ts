@@ -19,6 +19,10 @@ const numericClaimSchema = z.object({
 const perspectiveSchema = z.object({
   label: z.string().min(1).max(12),
   text: z.string().min(1).max(42),
+  // 观点必须回到内容包中的公开来源，避免把编辑判断伪装成外部观点。
+  sourceId: z.string().min(1).max(32),
+  attribution: z.string().min(1).max(56),
+  sourceType: z.enum(['媒体评论', '机构观点', '政策方观点']),
 });
 
 const topicSchema = z.object({
@@ -42,16 +46,17 @@ export const NewsBriefSchema = z.object({
   topics: z.array(topicSchema).length(4),
   captions: z.array(z.object({
     text: z.string().min(1).max(48),
+    voiceoverFile: z.string().min(1),
     startMs: z.number().min(0),
     endMs: z.number().positive(),
     timestampMs: z.number().nullable().default(null),
     confidence: z.number().nullable().default(null),
     pageBreakAfter: z.boolean().optional(),
-  })).min(6).max(12),
+  })).min(6).max(24),
   review: z.object({
     verification: z.literal('cross-checked'),
     approvalStatus: z.literal('approved'),
-    sources: z.array(sourceSchema).min(8).max(16),
+    sources: z.array(sourceSchema).min(8).max(20),
     numericClaims: z.array(numericClaimSchema).min(6).max(12),
   }),
   media: z.object({

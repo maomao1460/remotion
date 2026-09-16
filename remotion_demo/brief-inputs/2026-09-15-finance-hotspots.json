@@ -12,9 +12,9 @@
       "summary": "工业、高技术制造和出口较强，投资与地产仍需观察。",
       "metric": {"label": "高技术制造业", "value": "16.7", "unit": "%"},
       "chart": [{"label": "工业", "value": 5.2, "display": "+5.2%"}, {"label": "高技制造", "value": 16.7, "display": "+16.7%"}, {"label": "出口", "value": 18.6, "display": "+18.6%"}],
-      "positive": {"label": "偏积极", "text": "新动能与外贸支撑增长。"},
-      "caution": {"label": "偏谨慎", "text": "投资与地产数据仍有压力。"},
-      "neutral": {"label": "中性", "text": "供给较强，需求修复待观察。"}
+      "positive": {"label": "偏积极", "text": "新增长引擎带动工业与出口。", "sourceId": "bloomberg-miao", "attribution": "缪延亮 · 中金公司（Bloomberg 访谈）", "sourceType": "机构观点"},
+      "caution": {"label": "偏谨慎", "text": "房地产拖累仍可能令增长偏弱。", "sourceId": "reuters-views", "attribution": "Sheana Yue · Oxford Economics（路透）", "sourceType": "机构观点"},
+      "neutral": {"label": "中性", "text": "8 月大体稳定，但不排除偏弱。", "sourceId": "reuters-views", "attribution": "Lynn Song · ING（路透）", "sourceType": "机构观点"}
     },
     {
       "id": "liquidity",
@@ -23,9 +23,9 @@
       "summary": "社融和货币供应合理增长，逆回购稳定资金环境。",
       "metric": {"label": "M2 同比", "value": "7.5", "unit": "%"},
       "chart": [{"label": "社融", "value": 7.2, "display": "+7.2%"}, {"label": "M2", "value": 7.5, "display": "+7.5%"}, {"label": "逆回购", "value": 50, "display": "5000亿"}],
-      "positive": {"label": "偏积极", "text": "资金环境保持支持。"},
-      "caution": {"label": "偏谨慎", "text": "总量不等于资产普涨。"},
-      "neutral": {"label": "中性", "text": "继续看信用投向与利率。"}
+      "positive": {"label": "偏积极", "text": "稳增长仍需流动性配合。", "sourceId": "wangqing-mingming", "attribution": "王青 · 东方金诚", "sourceType": "机构观点"},
+      "caution": {"label": "偏谨慎", "text": "等量续作反映当前资金较宽松。", "sourceId": "wangqing-mingming", "attribution": "王青 · 东方金诚", "sourceType": "机构观点"},
+      "neutral": {"label": "中性", "text": "操作将随资金松紧灵活调整。", "sourceId": "wangqing-mingming", "attribution": "明明团队 · 中信证券", "sourceType": "机构观点"}
     },
     {
       "id": "global-rate",
@@ -34,9 +34,9 @@
       "summary": "期货市场在议息前给出较高的加息概率。",
       "metric": {"label": "加息 25bp 概率", "value": "92.4", "unit": "%"},
       "chart": [{"label": "加息", "value": 92.4, "display": "92.4%"}, {"label": "不变", "value": 7.6, "display": "7.6%"}],
-      "positive": {"label": "偏积极", "text": "预期已被市场提前定价。"},
-      "caution": {"label": "偏谨慎", "text": "高利率预期会压估值。"},
-      "neutral": {"label": "中性", "text": "概率不是既成事实。"}
+      "positive": {"label": "偏积极", "text": "紧缩预期已显著支撑美元。", "sourceId": "mufg-hardman", "attribution": "Lee Hardman · MUFG（FXStreet）", "sourceType": "机构观点"},
+      "caution": {"label": "偏谨慎", "text": "渣打认为加息或是错误选择。", "sourceId": "standard-view", "attribution": "渣打银行研究部（财联社）", "sourceType": "机构观点"},
+      "neutral": {"label": "中性", "text": "真正焦点仍是会后政策路径。", "sourceId": "standard-view", "attribution": "渣打银行研究部（财联社）", "sourceType": "机构观点"}
     },
     {
       "id": "sme-payment",
@@ -45,19 +45,29 @@
       "summary": "回款治理与融资支持同步推进，重点看落实。",
       "metric": {"label": "最长付款期限", "value": "60", "unit": "日"},
       "chart": [{"label": "措施", "value": 10, "display": "10项"}, {"label": "期限", "value": 60, "display": "60日"}],
-      "positive": {"label": "偏积极", "text": "有助改善链条现金流。"},
-      "caution": {"label": "偏谨慎", "text": "效果取决于执行监督。"},
-      "neutral": {"label": "中性", "text": "关注企业回款与融资数据。"}
+      "positive": {"label": "偏积极", "text": "规则让中小企业更明确回款预期。", "sourceId": "scio", "attribution": "柯吉欣 · 工信部（国新办吹风会）", "sourceType": "政策方观点"},
+      "caution": {"label": "偏谨慎", "text": "拖欠会转嫁融资成本并扰乱传导。", "sourceId": "scio", "attribution": "曹媛媛 · 人民银行（国新办吹风会）", "sourceType": "政策方观点"},
+      "neutral": {"label": "中性", "text": "规则、监管与融资支持并行。", "sourceId": "scio", "attribution": "国新办政策吹风会", "sourceType": "政策方观点"}
     }
   ],
   "captions": [
-    {"text": "9 月 15 日，四个财经变量，60 秒快速看懂。", "startMs": 0, "endMs": 5000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
-    {"text": "工业、高技术制造和出口较强。", "startMs": 5000, "endMs": 12000, "timestampMs": null, "confidence": null},
-    {"text": "投资与地产仍偏弱，需求修复仍需观察。", "startMs": 12000, "endMs": 20000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
-    {"text": "社融与 M2 合理增长，逆回购稳定资金环境。", "startMs": 20000, "endMs": 31000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
-    {"text": "美联储议息前，加息预期高位，外部利率风险仍在定价。", "startMs": 31000, "endMs": 43000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
-    {"text": "企业回款治理推出十项措施，重点看现金流改善能否落地。", "startMs": 43000, "endMs": 53000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
-    {"text": "关注新动能、资金传导与外部利率。公开信息整理，不构成投资建议。", "startMs": 53000, "endMs": 60000, "timestampMs": null, "confidence": null}
+    {"text": "9月15日，四个财经变量，六十秒快速看懂。", "voiceoverFile": "0915_intro.mp3", "startMs": 0, "endMs": 5000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
+    {"text": "第一，八月工业同比增长百分之五点二，", "voiceoverFile": "0915_macro.mp3", "startMs": 5000, "endMs": 8500, "timestampMs": null, "confidence": null},
+    {"text": "高技术制造增长百分之十六点七，出口增长百分之十八点六。", "voiceoverFile": "0915_macro.mp3", "startMs": 8500, "endMs": 12000, "timestampMs": null, "confidence": null},
+    {"text": "但前八月投资下降百分之七点二，房地产开发投资下降百分之十九点九。", "voiceoverFile": "0915_macro.mp3", "startMs": 12000, "endMs": 16400, "timestampMs": null, "confidence": null},
+    {"text": "增长亮点和需求压力并存。", "voiceoverFile": "0915_macro.mp3", "startMs": 16400, "endMs": 20000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
+    {"text": "第二，社融存量四百六十四点八万亿元，", "voiceoverFile": "0915_liquidity.mp3", "startMs": 20000, "endMs": 23200, "timestampMs": null, "confidence": null},
+    {"text": "M2增长百分之七点五。", "voiceoverFile": "0915_liquidity.mp3", "startMs": 23200, "endMs": 25000, "timestampMs": null, "confidence": null},
+    {"text": "当天五千亿元逆回购续作。", "voiceoverFile": "0915_liquidity.mp3", "startMs": 25000, "endMs": 27400, "timestampMs": null, "confidence": null},
+    {"text": "资金环境保持支持，但还要看信用投向。", "voiceoverFile": "0915_liquidity.mp3", "startMs": 27400, "endMs": 31000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
+    {"text": "第三，议息前市场隐含美联储加息二十五个基点的概率为百分之九十二点四。", "voiceoverFile": "0915_global.mp3", "startMs": 31000, "endMs": 36200, "timestampMs": null, "confidence": null},
+    {"text": "高利率预期可能压估值，", "voiceoverFile": "0915_global.mp3", "startMs": 36200, "endMs": 39000, "timestampMs": null, "confidence": null},
+    {"text": "但这只是预期，不是已发生的决定。", "voiceoverFile": "0915_global.mp3", "startMs": 39000, "endMs": 43000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
+    {"text": "第四，企业回款治理推出十项措施，", "voiceoverFile": "0915_payment.mp3", "startMs": 43000, "endMs": 46300, "timestampMs": null, "confidence": null},
+    {"text": "最长付款期限引导控制在六十日内。", "voiceoverFile": "0915_payment.mp3", "startMs": 46300, "endMs": 49000, "timestampMs": null, "confidence": null},
+    {"text": "利于改善现金流预期，关键还在执行。", "voiceoverFile": "0915_payment.mp3", "startMs": 49000, "endMs": 53000, "timestampMs": null, "confidence": null, "pageBreakAfter": true},
+    {"text": "后续关注新动能、资金传导与外部利率。", "voiceoverFile": "0915_close.mp3", "startMs": 53000, "endMs": 56300, "timestampMs": null, "confidence": null},
+    {"text": "以上为公开信息整理，不构成投资建议。", "voiceoverFile": "0915_close.mp3", "startMs": 56300, "endMs": 60000, "timestampMs": null, "confidence": null}
   ],
   "review": {
     "verification": "cross-checked",
@@ -72,7 +82,12 @@
       {"id": "cls", "outlet": "财联社", "url": "https://www.cls.cn/detail/2482901"},
       {"id": "sina-fedwatch", "outlet": "界面新闻转载", "url": "https://finance.sina.com.cn/jjxw/2026-09-15/doc-inirwfqh3657638.shtml"},
       {"id": "gov-policy", "outlet": "中国政府网政策转载", "url": "https://www.mee.gov.cn/zcwj/gwywj/202609/t20260910_1165789.shtml"},
-      {"id": "scio", "outlet": "工信部转载的国新办吹风会实录", "url": "https://wap.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html"}
+      {"id": "scio", "outlet": "工信部转载的国新办吹风会实录", "url": "https://wap.miit.gov.cn/xwfb/bldhd/art/2026/art_7285ee48244d4f20b0f127c7f013ec11.html"},
+      {"id": "bloomberg-miao", "outlet": "Bloomberg《The China Show》采访缪延亮", "url": "https://finance.yahoo.com/video/ai-transforming-chinas-economy-043644709.html"},
+      {"id": "reuters-views", "outlet": "路透报道引述 ING 与 Oxford Economics", "url": "https://www.channelnewsasia.com/business/tech-boom-powers-chinas-factories-economic-imbalances-deepen-consumption-slows-6384791"},
+      {"id": "wangqing-mingming", "outlet": "每日经济新闻引述王青与明明团队", "url": "https://finance.eastmoney.com/a/202609153874577352.html"},
+      {"id": "mufg-hardman", "outlet": "FXStreet 引述 MUFG Lee Hardman", "url": "https://www.tmgm.com/zh-hans/analysis/market-news/article/japanese-yen-weakens-as-fed-rate-hike-looms-202609150041"},
+      {"id": "standard-view", "outlet": "财联社转述渣打银行研报", "url": "https://finance.eastmoney.com/a/202609153874720433.html"}
     ],
     "numericClaims": [
       {"id": "industrial", "label": "工业增加值", "displayedValue": "5.2%", "sourceValues": [{"sourceId": "nbs", "value": "5.2%"}, {"sourceId": "yicai-macro", "value": "5.2%"}], "adoptedSourceId": "nbs", "resolution": "consistent", "resolutionNote": "国家统计局原始发布与媒体速览一致，采用国家统计局口径。"},

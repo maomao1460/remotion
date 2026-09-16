@@ -31,7 +31,7 @@ export const BriefTopic = ({topic, index}: {topic: NewsBriefTopic; index: number
     </div>
     <div style={{position: 'absolute', left: 148, right: 148, bottom: 126, display: 'flex', gap: 20}}>{perspectives.map((perspective, perspectiveIndex) => {
       const enter = spring({frame: frame - 18 - perspectiveIndex * 7, fps, config: {damping: 18, stiffness: 118}});
-      return <div key={perspectiveStyle[perspectiveIndex].title} style={{flex: 1, minHeight: 162, padding: '22px 27px', borderRadius: 24, background: '#152944', opacity: enter, scale: 0.9 + enter * 0.1, translate: `0 ${(1 - enter) * 28}px`, boxSizing: 'border-box'}}><div style={{fontSize: 22, color: perspectiveStyle[perspectiveIndex].color, fontWeight: 900}}>{perspectiveStyle[perspectiveIndex].title}</div><div style={{marginTop: 13, color: '#C4D0E4', fontSize: 20, lineHeight: 1.42}}>{perspective.text}</div></div>;
+      return <div key={perspectiveStyle[perspectiveIndex].title} style={{flex: 1, minHeight: 182, padding: '20px 27px', borderRadius: 24, background: '#152944', opacity: enter, scale: 0.9 + enter * 0.1, translate: `0 ${(1 - enter) * 28}px`, boxSizing: 'border-box'}}><div style={{fontSize: 22, color: perspectiveStyle[perspectiveIndex].color, fontWeight: 900}}>{perspectiveStyle[perspectiveIndex].title}</div><div style={{marginTop: 11, color: '#C4D0E4', fontSize: 19, lineHeight: 1.38}}>{perspective.text}</div><div style={{marginTop: 10, color: '#7F91AB', fontSize: 13, lineHeight: 1.25}}>来源：{perspective.attribution} · {perspective.sourceType}</div></div>;
     })}</div>
   </PulseBackdrop>;
 };
